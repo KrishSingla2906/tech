@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Book your Movie ticket</h1>
+        <form id="Booking-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="movie">Select Movie:</label>
+            <select id="movie" name="movie" required>
+                <option value="Inception">Inception</option>
+                <option value="Interstellar">Interstellar</option>
+                <option value="Thor:Ragnarok">Thor:Ragnarok</option>
+            </select>
+
+            <label for="showtime">Select Showtime:</label>
+            <input type="datetime-local" id="showtime" name="showtime">
+
+            <label for="seats">Number of Seats:</label>
+            <input type="number" id="seats" name="seats" min="1" max="10">
+
+            <button type="submit">Book Now</button>
+        </form>
+        
+    </div>
+    <script src = "script.js" ></script>
+</body>
+</html>
